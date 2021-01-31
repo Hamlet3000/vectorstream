@@ -48,9 +48,10 @@ def run_loop():
             img_io.seek(0)
             yield (b'--frame\r\n'
                    b'Content-Type: image/png\r\n\r\n' + img_io.getvalue() + b'\r\n')
-            time.sleep(.05)
         else:
-            time.sleep(.1)
+            pass
+        
+         time.sleep(.1)
 
 ###############################################################################
 # Erzeugt website unter 127.0.0.1:5000
