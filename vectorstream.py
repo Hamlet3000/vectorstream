@@ -74,7 +74,7 @@ def main():
       # open camera and release control
       robot.camera.init_camera_feed()
       #robot.behavior.say_text("I'm restart my camera!")
-      robot.audio.stream_wav_file('/home/ubuntu/Apps/Vectorstream/vector_bell_whistle.wav')
+      #robot.audio.stream_wav_file('/home/ubuntu/Apps/Vectorstream/vector_bell_whistle.wav')
       robot.conn.release_control()
 
       # Flask
